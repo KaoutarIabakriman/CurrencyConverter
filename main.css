@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #8AE0EB;
+}
+.wrapper {
+background-color: #fff;
+   width:370px ;
+   padding:30px ;
+   border:5px solid #0F2336;
+   border-radius: 7px;
+   
+
+}
+.wrapper header {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form {
+    margin-bottom: 40px 0 20px 0;
+}
+form :where(input, select, button) {
+    width: 100%;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+}
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input {
+    border: 1px solid #8AE0EB ;
+    padding: 0 15px ;
+    height: 50px;
+    font-size: 16px;
+    cursor: default;
+}
+form input:focus {
+   border:2px solid  #0F2336;
+   cursor: auto;
+   padding: 0 14px ;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #8AE0EB;
+}
+.select-box img{
+  max-width: 25px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track {
+  background-color: white;
+}
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
+.drop-list .icon {
+  font-size: 22px;
+  margin-top: 30px ;
+  cursor: pointer;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin:20px 0 30px ;
+}
+form button {
+  height: 50px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #0F2336;
+}
